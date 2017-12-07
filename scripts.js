@@ -1,6 +1,6 @@
 var weatherObj = {};
 // Does your browser support geolocation?
-fIsGeolocationSupported = function () {
+fRunGeolocation = function () {
     if ("geolocation" in navigator) {
         fGetLocation();
         return true;
@@ -124,5 +124,5 @@ fDataHandler = function (location, woeid) {
 }
 
 $(document).ready(function () {
-    fIsGeolocationSupported();
+    fRunGeolocation();
 });
