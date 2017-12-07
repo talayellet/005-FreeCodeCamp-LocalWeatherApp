@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: url("./images/pageBackground.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+/*not-supported*/
+.not-supported {
+    margin-top: 20px;
+}
+
+/*content-wrapper*/
+.content-wrapper {
+    width: 100%;
+}
+
+/*header-row*/
+.header-row {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-wrapper, .not-supported {
+    padding: 20px;
+    border-radius: 20px;
+    background: dimgray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, dimgray , white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, dimgray , white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, dimgray , white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, dimgray , white); /* Standard syntax */
+}
+
+.header-wrapper h1 {
+    color: black;
+}
+
+/*temperature-row*/
+.temperature-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100px;
+}
+
+.temperature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-icon-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+}
+
+.temperature-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    font-size: 24px;
+}
+
+.temperature-value span {
+    padding-right: 5px;
+}
+
+.temperature-unit {
+    display: inline-block;
+    width: 64px;
+}
+
+.units-toggle {
+    display: inline-block;
+}
+
+/*captions-row*/
+.captions-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    font-size: 12px;
+}
+
+.location-thumbnail, .weather-thumbnail, .wind-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.captions-row span {
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+
+    background: dimgray; /*For browsers that do not support gradients*/
+    background: -webkit-linear-gradient(left, dimgray , white); /*For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(right,  dimgray , white); /*For Opera 11.1 to 12.0*/
+    background: -moz-linear-gradient(right,  dimgray , white); /*For Firefox 3.6 to 15*/
+    background: linear-gradient(to right,  dimgray , white); /*Standard syntax (must be last)*/
+}
+
+@media only screen and (max-width: 320px) {
+    .captions-row {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    /*captions-row*/
+    .captions-row {
+        font-size: 18px;
+    }
+}

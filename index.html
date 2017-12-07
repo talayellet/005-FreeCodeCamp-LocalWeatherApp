@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--project css-->
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!--project scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="scripts.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-xs-12 col-md-6">
+            <div class="content-wrapper">
+                <div class="header-row">
+                    <div class="header-wrapper">
+                        <h1 class="text-center"><strong>Local Weather App</strong></h1>
+                    </div>
+                </div>
+                <div class="temperature-row">
+                    <div class="temperature-container">
+                        <div id="temperature-icon" class="temperature-icon-div"></div>
+                        <div class="temperature-value">
+                            <span id="temperature"></span>
+                            <span id="temperature-units"></span>
+                        </div>
+                        <button type="button" id="units-toggle-btn" class="btn-success btn-lg">Toggle Units</button>
+                    </div>
+                </div>
+                <div class="captions-row">
+                    <div class="location-thumbnail">
+                        <span id="location"></span>
+                    </div>
+                    <div class="weather-thumbnail">
+                        <span id="weather"></span>
+                    </div>
+                    <div class="wind-thumbnail">
+                        <span id="wind"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+</body>
+</html>
