@@ -23,7 +23,6 @@ fSelectIcon = function (code) {
     var storm = [0, 1, 2, 3, 4, 37, 38, 39, 45, 47];
     for (var i = 0; i < storm.length; i++) {
         if (code == storm[i]) {
-            // console.log("code = " + code + ", icon = thunder"); //DEBUG
             return "thunder.svg";
         }
     }
@@ -32,7 +31,6 @@ fSelectIcon = function (code) {
     var rain = [6, 9, 10, 11, 12, 14, 35, 40, 42];
     for (var i = 0; i < rain.length; i++) {
         if (code == rain[i]) {
-            // console.log("code = " + code + ", icon = rainy-6"); //DEBUG
             return "rainy-6.svg";
         }
     }
@@ -41,7 +39,6 @@ fSelectIcon = function (code) {
     var snow = [5, 7, 13, 14, 15, 16, 41, 42, 43, 46];
     for (var i = 0; i < snow.length; i++) {
         if (code == snow[i]) {
-            // console.log("code = " + code + ", icon = snowy-6"); //DEBUG
             return "snowy-6.svg";
         }
     }
@@ -50,25 +47,21 @@ fSelectIcon = function (code) {
     var cloudy = [26, 27, 28, 29, 30, 44];
     for (var i = 0; i < cloudy.length; i++) {
         if (code == cloudy[i]) {
-            // console.log("code = " + code + ", icon = cloudy"); //DEBUG
             return "cloudy.svg";
         }
     }
 
     // Case day
     if (code == 32 || code == 34 || code == 36) {
-        // console.log("code = " + code + ", icon = day"); //DEBUG
         return "day.svg";
     }
 
     // Case night
     if (code == 31 || code == 33) {
-        // console.log("code = " + code + ", icon = night"); //DEBUG
         return "night.svg";
     }
     // Case wind
     if (code == 23 || code == 24) {
-        // console.log("code = " + code + ", icon = night"); //DEBUG
         return "wind.ico";
     }
 
@@ -76,21 +69,17 @@ fSelectIcon = function (code) {
     var fog = [19, 20, 21, 22];
     for (var i = 0; i < fog.length; i++) {
         if (code == fog[i]) {
-            // console.log("code = " + code + ", icon = fog"); //DEBUG
             return "fog.ico";
         }
     }
 
     // Case no data
     if (code == 3200) {
-        // console.log("code = " + code + ", icon = fog"); //DEBUG
         return "fog.ico";
     }
 }
 
 fDisplayData = function (weatherObj) {
-    // console.log("fDisplayData - weatherObj.icon:");
-    // Display icon
     $("#temperature-icon").html('<img src="./icons/animated/' + fSelectIcon(weatherObj.icon) + '" alt="' + fSelectIcon(weatherObj.icon) + '">');
     $("#temperature").html('<strong>' + weatherObj.temperature + '</strong>');
     $("#temperature-units").html('<strong>' + weatherObj.temperatureUnits + '</strong>');
@@ -129,7 +118,7 @@ fDataHandler = function (location, woeid) {
             });
         },
         error: function(error){
-            // console.log(error);
+            console.log(error);
         }
     });
 }
