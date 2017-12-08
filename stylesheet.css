@@ -126,6 +126,30 @@ h1 {
     background: linear-gradient(to right,  dimgray , white); /*Standard syntax (must be last)*/
 }
 
+/*footer*/
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default [class^="col-"] {
+    padding: 0;
+}
+
+.flex-footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 248, 248, 0.5);
+    border-color: #e7e7e7;
+    font-size: 2.5vmin;
+}
+
+.flex-footer a:hover {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 320px) {
     .captions-row {
         font-size: 10px;
